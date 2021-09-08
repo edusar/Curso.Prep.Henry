@@ -106,7 +106,7 @@ function esImpar(num) {
     // Devuelve "true" si "num" es impar
     // De lo contrario, devuelve "false"
     // Tu código:
-    if (num % 3 === 1) return true;
+    if (num % 2 === 1) return true;
     return false;
 }
 
@@ -140,6 +140,7 @@ function redondearHaciaArriba(num) {
     // Tu código:
     return Math.ceil(num)
 }
+
 
 function numeroRandom() {
     //Generar un número al azar entre 0 y 1 y devolverlo
@@ -189,27 +190,30 @@ function obtenerAreaRectangulo(alto, ancho) {
 }
 
 
+
 function retornarPerimetro(lado) {
     //Escibe una función a la cual reciba el valor del lado de un cuadrado y retorne su perímetro.
     //Escribe tu código aquí
-    return (lado * 4)
+    var perimetro = lado * 4
+    return perimetro
 }
 
 
 function areaDelTriangulo(base, altura) {
     //Desarrolle una función que calcule el área de un triángulo.
     //Escribe tu código aquí
-    return (base * altura) / 2
-
+    var triangulo = (base * altura) / 2
+    return triangulo
 }
+
 
 
 function deEuroAdolar(euro) {
     //Supongamos que 1 euro equivale a 1.20 dólares. Escribe un programa que reciba
     //como parámetro un número de euros y calcule el cambio en dólares.
     //Escribe tu código aquí
-    var dolar = euro * 1.20;
-    return dolar;
+    var euroDolar = euro * 1.20
+    return euroDolar
 
 }
 
@@ -219,14 +223,15 @@ function esVocal(letra) {
     //Verificar si el usuario ingresó un string de más de un carácter y, en ese caso, informarle 
     //que no se puede procesar el dato mediante el mensaje "Dato incorrecto".
     //Escribe tu código aquí
-    if (letra == "a" || letra == "e" || letra == "i" || letra == "o" || letra == "u") {
+    if (letra.length > 1) {
+        return "Dato incorrecto";
+    } else if (
+        letra === "a" || letra === "e" || letra === "i" || letra === "o" || letra === "u") {
         return "Es vocal"
-    } else if (letra.length > 1) {
-        return "Dato incorrecto"
+    } else {
+        return "Dato incorrecto";
     }
-    return "Dato incorrecto"
 }
-
 
 
 // No modificar nada debajo de esta línea

@@ -141,6 +141,7 @@ function operadoresLogicos(num1, num2, num3) {
     return false
 }
 
+
 function esPrimo(numero) {
     // Devuelve "true" si "numero" es primo
     // De lo contrario devuelve "falso"
@@ -187,7 +188,6 @@ function tieneTresDigitos(numero) {
         return true
     }
     return false
-
 }
 
 function doWhile(numero) {

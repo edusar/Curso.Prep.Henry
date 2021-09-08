@@ -22,6 +22,7 @@ function obtenerLargoDelArray(array) {
 }
 
 
+
 function incrementarPorUno(array) {
     // "array" debe ser una matriz de enteros (int/integers)
     // Aumenta cada entero por 1
@@ -71,6 +72,8 @@ function arrayContiene(array, elemento) {
     }
     return false
 }
+
+
 
 
 function agregarNumeros(numeros) {
